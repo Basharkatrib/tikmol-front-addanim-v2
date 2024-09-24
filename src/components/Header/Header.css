@@ -1,0 +1,606 @@
+/* Header.css */
+
+.location-wrapper {
+    background: linear-gradient(193.52deg, #FF31FA -16.43%, #8733FF 61.49%, #5827BA 90.2%, #361E88 114.81%, #211969 135.31%, #1A175E 145.56%);
+    border-radius: 4px;
+    padding: 1px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.location {
+    height: 40px;
+    width: 144px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.location img {
+    margin-right: 10px;
+}
+
+.location p {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.location p span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #7A30EB;
+
+}
+
+.search-wrapper {
+    width: 430px;
+    height: 40px;
+    background: #F0F0F0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    border-radius: 25px;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+}
+
+.search-wrapper .input_sel select {
+    width: 35px;
+    font-size: 12px;
+    background-color: #F0F0F0;
+}
+
+.search-wrapper input {
+    background-color: #F0F0F0;
+    width: 330px;
+    outline: none;
+}
+
+.sign {
+    width: 171px;
+    height: 40px;
+    background: #211969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-left: 10px;
+
+
+}
+
+.sign select {
+    background: #211969;
+    color: white;
+
+}
+
+.wish {
+    display: flex;
+    align-items: center;
+    width: 101px;
+    height: 40px;
+    border: 1px solid #211969;
+    border-radius: 4px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.rin {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #7A30EB;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+.rin p {
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    background: #F19306;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.coll {
+    height: 40px;
+    width: 2px;
+    border: 1px solid #7D7D7D;
+    margin-left: 20px;
+}
+
+.lang {
+    margin-left: 20px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    width: 88px;
+    border: 1px solid transparent;
+    /* Set a solid border with transparent color */
+    border-image-source: linear-gradient(193.52deg, #FF31FA -16.43%, #8733FF 61.49%, #5827BA 90.2%, #361E88 114.81%, #211969 135.31%, #1A175E 145.56%);
+    border-image-slice: 1;
+    /* This is important to display the gradient properly */
+    border-radius: 10px;
+    /* Optional: to give it rounded corners */
+    margin-left: 20px;
+
+}
+
+.cart-header p {
+    position: absolute;
+    top: 22px;
+    left: 63px;
+    background: #F19306;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.all .second {
+    height: 32px; /* زيادة الارتفاع قليلاً لمظهر أفضل */
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    padding: 0 2px; /* بعض الحشو للحصول على مظهر أفضل */
+    justify-content: space-between;
+    position: relative;
+}
+  
+.categories-wrapper {
+    overflow: hidden;
+    width: 95%;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth; /* التمرير السلس */
+}
+  
+.categories {
+    display: flex;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 0;
+    list-style: none;
+}
+  
+.categories li {
+    font-size: 14px; /* حجم خط أكبر قليلاً */
+    font-weight: 500;
+    margin-right: 20px;
+    color: #414447;
+    white-space: nowrap; /* منع الانكسار */
+}
+  
+.arrowleft {
+    background: #ececed;
+    width: 22px; /* زيادة العرض لمظهر أفضل */
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 2px; /* المسافة بين السهم والقائمة */
+    transition: background-color 0.3s ease; /* تأثير عندما يتغير لون الخلفية */
+    rotate: 180deg;
+}
+.arrowright {
+    background: #ececed;
+    width: 22px; /* زيادة العرض لمظهر أفضل */
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 2px; /* المسافة بين السهم والقائمة */
+    transition: background-color 0.3s ease; /* تأثير عندما يتغير لون الخلفية */
+}
+  
+.arrowright:hover {
+    background-color: #d1d1d1; /* تغيير اللون عند التحويم لمظهر تفاعلي */
+}
+.arrowleft:hover {
+    background-color: #d1d1d1; 
+}
+.all .nav-mob{
+    display: none;
+}
+
+/*signin*/
+
+.signin-modal{
+    display: flex;
+    width: 2000px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    
+
+
+}
+
+.signin-modal .left{
+    flex-basis: 50%;
+    background-color: white;
+} 
+.signin-modal .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-basis: 50%;
+    background-color: #1A175E;
+    padding: 25px;
+}
+.signin-modal .right button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    
+}
+
+.signin-modal .right .group{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 175px;
+}
+.signin-modal .left{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.signin-modal .left h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.signin-modal .left form{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signin-modal .left form label{
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.signin-modal .left form input{
+    height: 48px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #7D7D7D;
+    background-color: #F8F8F8;
+    padding: 3px 10px;
+    
+}
+.signin-modal .left form .forgot{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: purple;
+}
+.signin-modal .left form .sign-button{
+    width: 100%;
+    height: 45px;
+    padding: 12px 14px 12px 14px;
+    background: #211969;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    
+}
+.signin-modal .left form .wrapper-button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2px solid #7D7D7D;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.signin-modal .left form .wrapper-button button{
+    margin-top: 2px;
+}
+.signin-modal .left .signup{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.signin-modal .left .signup span{
+    color: purple;
+}
+
+
+
+
+
+.signin-modal .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.signin-modal .divider::before,
+.signin-modal .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.signin-modal .divider:not(:empty)::before {
+    margin-right: 10px;
+}
+
+.signin-modal .divider:not(:empty)::after {
+    margin-left: 10px;
+}
+
+.signin-modal .divider span {
+    font-size: 14px;
+    color: #777;
+}
+
+/*endsignin*/
+
+/*signup*/
+.signin-modal2{
+    display: flex;
+    width: 2000px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    
+
+
+}
+
+.signin-modal2 .left{
+    flex-basis: 50%;
+    background-color: white;
+} 
+.signin-modal2 .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-basis: 50%;
+    background-color: #1A175E;
+    padding: 25px;
+}
+.signin-modal2 .right button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    
+}
+
+.signin-modal2 .right .group{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 175px;
+}
+.signin-modal2 .left{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.signin-modal2 .left h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.signin-modal2 .left form{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signin-modal2 .left form label{
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.signin-modal2 .left form input{
+    height: 48px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #7D7D7D;
+    background-color: #F8F8F8;
+    padding: 3px 10px;
+    
+}
+.signin-modal2 .left form .forgot{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: purple;
+}
+.signin-modal2 .left form .sign-button{
+    width: 100%;
+    height: 45px;
+    padding: 12px 14px 12px 14px;
+    background: #211969;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    
+}
+.signin-modal2 .left form .wrapper-button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2px solid #7D7D7D;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.signin-modal2 .left form .wrapper-button button{
+    margin-top: 2px;
+}
+.signin-modal2 .left .signup{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.signin-modal2 .left .signup span{
+    color: purple;
+}
+
+
+
+
+
+.signin-modal2 .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.signin-modal2 .divider::before,
+.signin-modal2 .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.signin-modal2 .divider:not(:empty)::before {
+    margin-right: 10px;
+}
+
+.signin-modal2 .divider:not(:empty)::after {
+    margin-left: 10px;
+}
+
+.signin-modal2 .divider span {
+    font-size: 14px;
+    color: #777;
+}
+
+/*endsignup*/
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .all .nav-desk{
+        display: none;
+    }
+    .all .nav-mob{
+        display: block;
+    }
+    .all .nav-mob{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
+    .all .nav-mob .contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .all .nav-mob .contain .right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 10px;
+    }
+    .all .nav-mob .contain .right .rin{
+        border: none;
+    }
+    .all .nav-mob .contain .right .wrapper-hart .hart{
+        width: 30px;
+        height: 30px;
+    }
+    .all .nav-mob .wrapper-input{
+        width: 100%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .all .nav-mob .wrapper-input input{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        background-color: #F0F0F0;
+        padding: 15px 65px 15px 15px;
+        border-radius: 25px;
+        outline: none;
+
+    }
+    .all .nav-mob .wrapper-input .search{
+        position: absolute;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+    }
+    .all .nav-mob .locate{
+        padding: 10px 15px;
+        margin-top: 5px;
+    }
+    .all .nav-mob .locate p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .all .nav-mob .locate p .para-locate{
+        color: Purple;
+    }
+    
+
+   
+}
+
+  
+  

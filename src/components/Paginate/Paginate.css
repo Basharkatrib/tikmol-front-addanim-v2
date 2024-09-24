@@ -1,0 +1,118 @@
+.paginate-all {
+    margin: 0 0 20px 0;
+}
+
+.paginate-all .top {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgb(245, 245, 245);
+}
+.paginate-all .top h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.paginate-all .under {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.paginate-all .slide-container {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+
+    
+}
+
+.paginate-all .first {
+    display: flex;
+   
+    justify-content: center;
+}
+
+.paginate-all .second {
+    margin-top: 20px;
+}
+
+.paginate-all .slide-main {
+    flex: 1 1 calc(30% - 20px); 
+    max-width: calc(30% - 20px); 
+    box-sizing: border-box;
+}
+.paginate-all .button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.paginate-all .button-container button{
+    width: 85%;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.paginate-all .button-container .add{
+    background-color: #211969;
+    color: white;
+
+}
+.paginate-all .button-container .remove{
+    color: #202124;
+    border: 1px solid #202124
+
+}
+
+:where(.css-dev-only-do-not-override-14qglws).ant-pagination .ant-pagination-item-active a {
+    color: white;
+    border: none !important;
+    background-color: #211969;
+}
+:where(.css-dev-only-do-not-override-14qglws).ant-pagination .ant-pagination-item-active:hover a {
+    color: white;
+}
+:where(.css-dev-only-do-not-override-14qglws).ant-pagination .ant-pagination-item {
+    display: inline-block;
+    min-width: 32px;
+    height: 32px;
+    margin-inline-end: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #211969;
+    border-radius: 0px;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 480px) {
+    .paginate-all .slide-container {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+        margin-right: 50px;
+        gap: 25px;
+    }
+    
+    .paginate-all .slide-main {
+        flex: 1 1 100%; 
+        max-width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .paginate-all .button-container button {
+        width: 90%;
+    }
+}

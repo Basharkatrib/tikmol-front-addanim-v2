@@ -1,0 +1,142 @@
+.special_off_all {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3BFB7;
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.special_off_all .left {
+    flex-basis: 25%;
+}
+
+.special_off_all .left h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #DD2E2E;
+    margin-left: 35px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    /* Hide overflow */
+    position: relative;
+    flex-basis: 75%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    width: calc(100% + 20px);
+    /* Adjust for spacing */
+}
+
+
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.arrow.left {
+    position: absolute;
+    left: 10px;
+}
+
+.arrow.right {
+    position: absolute;
+    right: 10px;
+}
+
+.arrow:disabled {
+    opacity: 0.5;
+    /* Make disabled arrows less visible */
+    cursor: not-allowed;
+    /* Change cursor for disabled state */
+}
+
+.ballon1,
+.ballon2,
+.ballon3,
+.ballon4 {
+    position: absolute;
+    z-index: 99;
+
+}
+
+.ballon1 {
+    top: 0;
+    right: 0;
+}
+
+.ballon2 {
+    top: 0;
+    left: 0;
+
+
+}
+
+.ballon3 {
+    bottom: 0;
+    right: 0;
+}
+
+.ballon4 {
+    bottom: 0;
+    left: 0;
+}
+
+
+@media(max-width:768px) {
+    .special_off_all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+
+    }
+
+    .ballon1,
+    .ballon2,
+    .ballon3,
+    .ballon4 {
+        display: none;
+    }
+    .slide-main {
+        min-width: calc(100% / 3);
+        box-sizing: border-box;
+        padding: 10px;
+        height: 525px;
+        background-color: white;
+        margin-left: 0px !important;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        position: relative;
+    }
+    .special_off_all .left h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #DD2E2E;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+}

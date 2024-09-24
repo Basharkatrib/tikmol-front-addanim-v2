@@ -1,0 +1,130 @@
+/* Privacy.css */
+
+.privacy-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+  }
+  
+  .privacy-all  .section {
+    position: relative; /* Position relative for the pseudo-element */
+    width: 800px;
+    height: auto;
+    margin: 20px 0;
+    padding: 32px;
+    border-radius: 12px;
+    background: white; /* Set the background color of the section */
+    overflow: hidden; /* Clips the content inside rounded corners */
+    z-index: 1;
+    color: white;
+  }
+  
+  .privacy-all .section::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px; /* Apply the same radius */
+    padding: 2px; /* Match the border size */
+    background: linear-gradient(
+      193.52deg, 
+      #FF31FA -16.43%, 
+      #8733FF 61.49%, 
+      #5827BA 90.2%, 
+      #361E88 114.81%, 
+      #211969 135.31%, 
+      #1A175E 145.56%
+    );
+    z-index: -1; /* Position the gradient behind the content */
+  }
+  .privacy-all .section h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .privacy-all .section p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .privacy-all .under{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: auto;
+  }
+  .privacy-all .under .left , .privacy-all .under .right{
+    position: relative; /* Position relative for the pseudo-element */
+    width: 390px;
+    height: 250px;
+    margin: 20px 0;
+    padding: 32px;
+    border-radius: 12px;
+    background: white; /* Set the background color of the section */
+    overflow: hidden; /* Clips the content inside rounded corners */
+    z-index: 1;
+    color: white;
+
+  }
+
+  .privacy-all .under .left::before , .privacy-all .under .right::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px; /* Apply the same radius */
+    padding: 2px; /* Match the border size */
+    background: linear-gradient(
+      193.52deg, 
+      #FF31FA -16.43%, 
+      #8733FF 61.49%, 
+      #5827BA 90.2%, 
+      #361E88 114.81%, 
+      #211969 135.31%, 
+      #1A175E 145.56%
+    );
+    z-index: -1; /* Position the gradient behind the content */
+  }
+  .privacy-all .under .left h3 , .privacy-all .under .right h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .privacy-all .under .left p , .privacy-all .under .right p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+
+  /* Privacy.css */
+
+/* Existing styles remain unchanged */
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .privacy-all {
+      margin: 20px; /* Adjust the margin for smaller screens */
+    }
+  
+    .privacy-all .section {
+      width: 100%; /* Make the section take full width on mobile */
+      padding: 20px; /* Adjust padding for a better look on mobile */
+      margin: 10px 0; /* Reduce the margin between sections */
+    }
+  
+    .privacy-all .under {
+      flex-direction: column; /* Stack the items vertically */
+      width: 100%; /* Take full width on mobile */
+    }
+  
+    .privacy-all .under .left,
+    .privacy-all .under .right {
+      width: 100%; /* Make each section take full width */
+      padding: 20px; /* Adjust padding for mobile */
+      margin: 10px 0; /* Add some margin between the stacked elements */
+    }
+  }
+  

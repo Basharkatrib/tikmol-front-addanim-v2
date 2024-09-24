@@ -1,0 +1,67 @@
+.hot-swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFECF2;
+}
+
+.hot-swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex; /* استخدم flex لتوسيط المحتوى داخل كل شريحة */
+    justify-content: center; /* توسيط المحتوى أفقيًا */
+    align-items: center; /* توسيط المحتوى عموديًا */
+    height: 100%; /* تأكيد أن الشريحة تأخذ كامل الارتفاع المتاح */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-right: -11px !important;
+    background-color: #EFECF2;
+    padding: 20px;
+
+   
+}
+
+/* إزالة تأثير التحجيم هنا */
+.hot-swiper-slide-active {
+    transform: none !important;
+    z-index: 1 !important;
+}
+
+.hot-swiper-slide-next,
+.hot-swiper-slide-prev {
+    transform: none !important;
+    opacity: 1 !important; /* إزالة تأثير الشفافية إذا لزم الأمر */
+}
+
+/* الأنماط الخاصة بالأسهم */
+.hot-swiper .swiper-button-next,
+.hot-swiper .swiper-button-prev {
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hot-swiper .swiper-button-next {
+    right: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hot-swiper .swiper-button-prev {
+    left: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* تحسين تأثير الانتقال للأسهم عند المرور عليها */
+.hot-swiper .swiper-button-next:hover,
+.hot-swiper .swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #007bff;
+}

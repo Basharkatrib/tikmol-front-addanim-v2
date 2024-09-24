@@ -1,0 +1,480 @@
+.order-all{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    
+}
+.order-all .first{
+    width: 100%;
+    background-color: #FBFBFB;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.order-all .second{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px;
+}
+.order-all .second .left ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 0.5px solid #ECECED;
+    padding: 8px;
+    
+}
+.order-all .second .middle{
+    position: relative;
+    width: 380px;
+    height: 40px;
+}
+.order-all .second .middle input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: #F8F8F8;
+    border: 0.2px solid #7D7D7D;
+    border-radius: 3px;
+    padding: 0 30px 0 20px;
+}
+
+.order-all .second .middle .search{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+.order-all .second .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.order-all .second .right p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.order-all .second .right button{
+    border: 1px solid #7D7D7D;
+}
+.order-all .third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.order-all .third p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.order-all .fourth{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 20px 35px;
+    margin-top: 10px;
+}
+.order-all .fourth p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.order-all .fourth p span{
+    color: purple;
+}
+.order-all .fifth{
+    background-color: #F8F8F8;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.order-all .fifth .left span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.order-all .fifth .right span{
+    color: #7D7D7D;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.order-all .fifth .right p{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.order-all .sixth{
+    width: 100%;
+    padding: 20px 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.order-all .sixth .left{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.order-all .sixth .left img{
+    width: 110px;
+    height: 150px;
+}
+.order-all .sixth .left .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 70%;
+    align-items: self-start;
+}
+.order-all .sixth .left .right .top{
+    display: flex;
+    align-items: self-start;
+    gap: 30px;
+}
+.order-all .sixth .left .right .top p{
+    display: flex;
+    align-items: self-start;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.order-all .sixth .left .right .top p span{
+    color: #7A30EB;
+}
+.order-all .sixth .left .right .middle p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.order-all .sixth .left .right .butt{
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+    gap: 30px;
+}
+.order-all .sixth .left .right .butt button{
+    width: 165px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.order-all .sixth .left .right .butt .track{
+    background-color: #211969;
+    color: white;
+
+}
+.order-all .sixth .left .right .butt .cancel{
+    background-color: #ECECED;
+    color: black;
+    border: 0.5px solid #7D7D7D
+}
+.order-all .sixth .right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-all .sixth .right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.order-all .sixth .right img{
+    width: 110px;
+    height: 150px;
+}
+.order-all .sixth .right .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 70%;
+    align-items: self-start;
+}
+.order-all .sixth .right .right .top{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.order-all .sixth .right .right .top p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.order-all .sixth .right .right .top p span{
+    color: #7A30EB;
+}
+.order-all .sixth .right .right .middle p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.order-all .sixth .right .right .butt{
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+    gap: 30px;
+}
+.order-all .sixth .right .right .butt button{
+    width: 165px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.order-all .sixth .right .right .butt .track{
+    background-color: #211969;
+    color: white;
+
+}
+.order-all .sixth .right .right .butt .cancel{
+    background-color: #ECECED;
+    color: black;
+    border: 0.5px solid #7D7D7D
+}
+.order-all .sixth .separator {
+    width: 1px; 
+    background-color: #ccc; 
+    height: auto; 
+    margin: 0 20px 0 10px; 
+}
+.order-all .pomp{
+    padding: 20px;
+}
+.order-all .pomp .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.order-all .pomp .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.order-all .pomp .content form .top{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.order-all .pomp .content form .top .left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 5px;
+}
+.order-all .pomp .content form .top .left label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #202124;
+}
+.order-all .pomp .content form .top .left input{
+    height: 40px;
+    width: 100%;
+    background-color: #ECECED;
+    outline: none;
+    border: 0.5px solid #414447;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+.order-all .pomp .content form .top .right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 5px;
+}
+.order-all .pomp .content form .top .right label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #202124;
+}
+.order-all .pomp .content form .top .right input,.order-all .pomp .content form .top .right select{
+    height: 40px;
+    width: 100%;
+    background-color: #ECECED;
+    outline: none;
+    border: 0.5px solid #414447;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+.order-all .pomp .content form .under{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: self-start;
+}
+.order-all .pomp .content form .under label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #202124;
+}
+.order-all .pomp .content form .under textarea{
+    width: 100%;
+    background-color: #ECECED;
+    outline: none;
+    border: 0.5px solid #414447;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.order-all .pomp .content form .under button{
+    background: #211969;
+    height: 45px;
+    width: 200px;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .order-all {
+        margin-bottom: 30px;
+    }
+    
+    .order-all .first {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+    .order-all .second {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    
+
+    
+    .order-all .second .middle {
+        width: 100%;
+    }
+    
+    .order-all .second .right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .order-all .third {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .order-all .fourth {
+        padding: 15px 20px;
+    }
+    
+    .order-all .fifth {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-all .fifth .right p, 
+    .order-all .fifth .right span {
+        text-align: left;
+    }
+
+    .order-all .sixth {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .order-all .sixth .left, 
+    .order-all .sixth .right {
+        flex-basis: 100%;
+        flex-direction: column;
+        
+    }
+
+    .order-all .sixth .separator {
+        display: none; 
+    }
+
+    .order-all .sixth .left img,
+    .order-all .sixth .right img {
+        width: 90px;
+        height: 120px;
+    }
+
+    .order-all .sixth .left .right,
+    .order-all .sixth .right .right {
+        gap: 5px;
+    }
+
+    .order-all .sixth .left .right .butt,
+    .order-all .sixth .right .right .butt {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .order-all .sixth .left .right .butt button,
+    .order-all .sixth .right .right .butt button {
+        width: 100%;
+    }
+    .order-all .sixth .left .right .top{
+        display: flex;
+        align-items: self-start;
+        gap: 15px;
+    }
+    .order-all .sixth .right .right .top{
+        display: flex;
+        align-items: self-start;
+        gap: 15px;
+    }
+    .order-all .pomp .content form .top{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .order-all .pomp .content form .top .left{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: 5px;
+        width: 100%;
+    }.order-all .pomp .content form .top .right{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        gap: 5px;
+        width: 100%;
+    }
+    .order-all .pomp .content form .top .left label{
+        font-size: 14px;
+        font-weight: 400;
+        color: #202124;
+        text-align: left;
+    }
+    .order-all .pomp .content form .top .right label{
+        font-size: 14px;
+        font-weight: 400;
+        color: #202124;
+        text-align: left;
+    }
+    .order-all .pomp .content form .under button{
+        background: #211969;
+        height: 45px;
+        width: 100%;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+

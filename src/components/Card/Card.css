@@ -1,0 +1,42 @@
+.card {
+    width: 100%; /* تعديل العرض ليكون 100% داخل السلايد */
+    height: 380px; /* تعديل الارتفاع */
+    max-width: 350px; /* تعيين الحد الأقصى للعرض */
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.card .image {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p {
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card p span {
+    background-color: #7A30EB;
+    border-radius: 3px;
+    padding: 2px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.card h3 {
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}

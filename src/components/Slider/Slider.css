@@ -1,0 +1,30 @@
+.slider_all{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.slider_all .left{
+    flex-basis: 60%;
+    height: 337px;
+}
+.slider_all .right{
+    flex-basis: 40%;
+    height: 337px;
+}
+.slider_all .left img{
+    height: 336px;
+}
+.slider_all .right img{
+    width: 100%;
+    height: 337px;
+}
+
+@media(max-width:768px){
+    .slider_all{
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+
+}
