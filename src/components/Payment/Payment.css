@@ -35,12 +35,12 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
-    padding: 20px; /* إضافة padding لتجنب التصاق المحتوى بالحواف */
+    padding: 20px; 
   }
   
   .payment-all .row .wrapper-progressBar {
     width: 100%;
-    max-width: 600px; /* تحديد عرض أقصى */
+    max-width: 600px; 
     margin-top: 10px;
     text-align: center;
   }
@@ -50,21 +50,21 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 100%; /* استخدام عرض مرن */
-    max-width: 600px; /* تحديد عرض أقصى للعنصر */
+    width: 100%; 
+    max-width: 600px; 
   }
   
-  /* تنسيق شريط التقدم */
+  
   .payment-all .progressBar {
     display: flex;
     padding: 0;
     margin: 0;
     align-items: center;
-    width: 100%; /* استخدام عرض مرن */
-    max-width: 500px; /* تحديد عرض أقصى */
+    width: 100%; 
+    max-width: 500px; 
   }
   
-  /* تنسيق العناصر داخل شريط التقدم */
+
   .payment-all .progressBar li {
     list-style-type: none;
     flex: 1;
@@ -77,7 +77,7 @@
     gap: 10px;
   }
   
-  /* التنسيق قبل كل عنصر ووضع الرقم */
+  
   .payment-all .progressBar li:before {
     content: attr(data-step);
     line-height: 30px;
@@ -94,7 +94,7 @@
     z-index: 1;
   }
   
-  /* شريط الاتصال بين العناصر */
+  
   .payment-all .progressBar li:after {
     content: "";
     position: absolute;
@@ -107,17 +107,17 @@
     transform: translateY(-50%);
   }
   
-  /* إزالة الخط الأول بين العناصر */
+
   .payment-all .progressBar li:first-child:after {
     content: none;
   }
   
-  /* العناصر النشطة */
+  
   .payment-all .progressBar li.active {
     color: #7A30EB;
   }
   
-  /* تنسيق الدائرة النشطة */
+  
   .payment-all .progressBar li.active:before {
     border-color: dodgerblue;
     background-color: #7A30EB;
@@ -126,7 +126,7 @@
     color: #7A30EB;
   }
   
-  /* تنسيق الخط بعد العنصر النشط */
+  
   .payment-all .progressBar .active:after {
     background: linear-gradient(to right, #7A30EB 50%, #7A30EB 50%);
   }
@@ -401,6 +401,7 @@
     border-radius: 25px;
     font-size: 20px;
     font-weight: 600;
+    width: 100%;
 
   }
   .payment-all .under .right .under2{
@@ -436,35 +437,35 @@
 @media (max-width: 768px) {
     .payment-all {
       margin-top: 10px; 
-      padding: 10px; /* إضافة حواف لداخل العنصر */
+      padding: 10px; 
     }
   
     .payment-all .head {
-      gap: 10px; /* تقليل الفجوة بين العناصر */
+      gap: 10px; 
     }
   
     .payment-all .under {
-      flex-direction: column; /* عرض العناصر عمودياً */
-      padding: 10px; /* تقليل الحواف الجانبية */
-      gap: 20px; /* زيادة الفجوة بين الأقسام */
+      flex-direction: column; 
+      padding: 10px; 
+      gap: 20px; 
     }
   
     .payment-all .under > .left,
     .payment-all .under > .right {
-      flex-basis: 100%; /* أخذ عرض كامل العنصر */
+      flex-basis: 100%; 
     }
   
     .payment-all .under .left .top,
     .payment-all .under .left .bottom,
     .payment-all .under .right .top,
     .payment-all .under .right .under2 {
-      padding: 10px; /* تقليل حواف العناصر الداخلية */
+      padding: 10px;
     }
   
     .payment-all .under .left .bottom .formy .first,
     .payment-all .under .left .bottom .formy .second {
-      flex-direction: column; /* ترتيب العناصر عمودياً */
-      gap: 10px; /* تقليل المسافة بين الحقول */
+      flex-direction: column; 
+      gap: 10px;
     }
   
  
@@ -472,7 +473,7 @@
 
   
     .payment-all .under .right .top button {
-      width: 100%; /* جعل الزر يأخذ عرض كامل العنصر */
+      width: 100%; 
     }
     .payment-all .under .left .bottom .formy .second .cvv input{
       outline: none;

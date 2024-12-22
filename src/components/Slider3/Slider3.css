@@ -1,14 +1,13 @@
-/* تنسيقات لسلايدر الخاص */
 .custom-swiper {
   width: 100%;
-  height: auto; /* ضبط الارتفاع تلقائياً بناءً على محتويات السلايد */
+  height: auto; 
 }
 
 .custom-swiper-slide {
-  width: 350px;  /* تعيين نفس عرض الـ Card */
-  height: 370px; /* تعيين نفس ارتفاع الـ Card */
+  width: 350px;  
+  height: 370px; 
   
-  /* محاذاة المحتوى داخل الشريحة */
+  
   display: flex;
   justify-content: center;
   align-items: center;

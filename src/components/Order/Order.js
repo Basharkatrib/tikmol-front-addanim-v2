@@ -209,7 +209,7 @@ export default function Order() {
                         </div>
                     </div>
                 </div>
-                <div className="separator"></div> {/* خط فاصل */}
+                <div className="separator"></div> 
                 <div className="right">
                     <img src={buds} alt="Buds" />
                     <div className="right">

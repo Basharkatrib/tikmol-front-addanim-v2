@@ -14,10 +14,19 @@
 .slider_all .left img{
     height: 336px;
 }
-.slider_all .right img{
+.slider_all .right {
+    overflow: hidden; 
+    position: relative; 
+}
+.slider_all .right img {
     width: 100%;
     height: 337px;
+    transition: transform 0.3s ease; 
 }
+.slider_all .right:hover img {
+    transform: scale(1.05); 
+}
+
 
 @media(max-width:768px){
     .slider_all{

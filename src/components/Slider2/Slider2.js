@@ -19,12 +19,12 @@ export default function Slider2() {
         loop={true}                 
         className="slider2-swiper"
         breakpoints={{
-          // إعدادات للشاشات الأصغر من 500 بكسل
+          
           0: {
-            slidesPerView: 1, // عرض شريحة واحدة
-            spaceBetween: 10, // تقليل المسافة بين الشرائح
+            slidesPerView: 1, 
+            spaceBetween: 10, 
           },
-          // إعدادات للشاشات الأكبر من 500 بكسل
+          
           500: {
             slidesPerView: 1.3,
             spaceBetween: 30,

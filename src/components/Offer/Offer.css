@@ -62,27 +62,27 @@
     }
 
     .all_offer h3 {
-        font-size: 12px; /* تصغير حجم الخط */
+        font-size: 12px; 
         font-weight: 600;
-        margin-right: 0; /* إزالة الهامش */
+        margin-right: 0; 
     }
 
     .all_offer p {
-        font-size: 12px; /* تصغير حجم النص */
+        font-size: 12px; 
         font-weight: 500;
-        margin-right: 0; /* إزالة الهامش */
+        margin-right: 0; 
     }
     .all_offer .on-your{
         display: none;
     }
 
     .all_offer .free {
-        width: 100px; /* تصغير العرض */
+        width: 100px; 
         height: 28px;
         border-radius: 4px;
-        font-size: 12px; /* تصغير حجم الخط */
+        font-size: 12px; 
         font-weight: 600;
-        margin-right: 0; /* إزالة الهامش */
+        margin-right: 0; 
     }
 
     .all_offer .tikmo {
@@ -91,11 +91,11 @@
         border-radius: 20px;
         font-size: 12px; 
         font-weight: 700;
-        margin-right: 0; /* إزالة الهامش */
+        margin-right: 0; 
     }
 
     .all_offer img {
-        display: none; /* إخفاء الصورة تمامًا */
+        display: none; 
     }
 }
 

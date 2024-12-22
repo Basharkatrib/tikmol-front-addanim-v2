@@ -5,6 +5,7 @@ import payment from "../../assets/icons/Payment.png";
 import logo from "../../assets/icons/Logo.png";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { Link } from "react-router-dom";
 
 export default function Adress() {
   const mapRef = useRef(null);
@@ -98,7 +99,9 @@ export default function Adress() {
               <input type="checkbox" />
               <label>Remember This Address</label>
             </div>
-            <button type="submit">Continue</button>
+            <Link to="/payment" >
+              <button type="submit">Continue</button>
+            </Link>
           </form>
         </div>
       </div>

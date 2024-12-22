@@ -2,23 +2,20 @@ import React, { useState, useEffect } from 'react';
 import './Special.css';
 import ballon from "../../assets/images/Balloon.png";
 import Slide from '../Slide/Slide';
-
-const slides = Array.from({ length: 10 }, (_, index) => ({
-    id: index,
-    title: `Slide ${index + 1}`,
-    image: `https://via.placeholder.com/150?text=Image+${index + 1}`,
-}));
+import { useParams } from 'react-router-dom';  // استيراد useParams
 
 export default function Special({ title, image, showBalloons, backcolor, imageslide }) {
+    const { categoryId, subcategoryId } = useParams(); // استخراج categoryId و subcategoryId
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slidesToShow, setSlidesToShow] = useState(3);
+    const [slides, setSlides] = useState([]); 
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 700) {
                 setSlidesToShow(1);
             } else {
-                setSlidesToShow(3);
+                setSlidesToShow(2);
             }
         };
 
@@ -29,6 +26,17 @@ export default function Special({ title, image, showBalloons, backcolor, imagesl
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    useEffect(() => {
+        fetch('http://localhost:8000/api/products')  
+            .then(response => response.json())
+            .then(data => {
+                setSlides(data);  
+
+            })
+            .catch(error => console.error('Error fetching products:', error));
+    }, []);
+   
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -64,7 +72,15 @@ export default function Special({ title, image, showBalloons, backcolor, imagesl
                 </button>
                 <div className="slides">
                     {slides.slice(currentIndex, currentIndex + slidesToShow).map(slide => (
-                        <Slide key={slide.id} slide={slide} imageslide={imageslide} />
+                        <Slide
+                            key={slide.id}
+                            slide={{ ...slide, title: slide.name }}  
+                            imageslide={slide.image_path ? `http://localhost:8000/storage/${slide.image_path}` : imageslide}  
+                            marginLeftLaptop="50px"
+                            marginLeftMobile="0px"
+                            categoryId={categoryId} // تمرير categoryId بشكل صحيح
+                            subcategoryId={subcategoryId} // تمرير subcategoryId بشكل صحيح
+                        />
                     ))}
                 </div>
                 <button className="arrow right" onClick={nextSlide} disabled={currentIndex + slidesToShow >= slides.length}>

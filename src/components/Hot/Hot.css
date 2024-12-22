@@ -11,10 +11,10 @@
 .hot-swiper-slide {
     font-size: 18px;
     background: #fff;
-    display: flex; /* استخدم flex لتوسيط المحتوى داخل كل شريحة */
-    justify-content: center; /* توسيط المحتوى أفقيًا */
-    align-items: center; /* توسيط المحتوى عموديًا */
-    height: 100%; /* تأكيد أن الشريحة تأخذ كامل الارتفاع المتاح */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
     transition: transform 0.3s ease, opacity 0.3s ease;
     margin-right: -11px !important;
     background-color: #EFECF2;
@@ -23,7 +23,6 @@
    
 }
 
-/* إزالة تأثير التحجيم هنا */
 .hot-swiper-slide-active {
     transform: none !important;
     z-index: 1 !important;
@@ -32,10 +31,9 @@
 .hot-swiper-slide-next,
 .hot-swiper-slide-prev {
     transform: none !important;
-    opacity: 1 !important; /* إزالة تأثير الشفافية إذا لزم الأمر */
+    opacity: 1 !important;
 }
 
-/* الأنماط الخاصة بالأسهم */
 .hot-swiper .swiper-button-next,
 .hot-swiper .swiper-button-prev {
     color: #000;
@@ -59,9 +57,15 @@
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* تحسين تأثير الانتقال للأسهم عند المرور عليها */
 .hot-swiper .swiper-button-next:hover,
 .hot-swiper .swiper-button-prev:hover {
     background: rgba(255, 255, 255, 1);
     color: #007bff;
 }
+
+.hot-swiper >.swiper-wrapper{
+    /* justify-content: space-between !important; */
+    justify-content: space-between !important;
+}
+
+

@@ -1,12 +1,12 @@
 footer {
-    height: auto; /* ضبط الارتفاع تلقائيًا */
+    height: auto; 
     background-color: #211969;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px; /* تقليل الحواف قليلاً */
-    flex-wrap: wrap; /* السماح بالالتفاف */
+    padding: 20px 20px; 
+    flex-wrap: wrap;
   }
   
   footer .left {
@@ -14,51 +14,51 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* إضافة مساحة أسفل الشعار */
+    margin-bottom: 20px; 
     margin-right: 40px;
   }
   
   footer .right {
     display: flex;
-    flex-wrap: wrap; /* السماح بالالتفاف للعناصر */
-    justify-content: center; /* محاذاة العناصر في الوسط */
-    gap: 30px; /* توفير فجوة بين الأقسام */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
     margin-right: 20px;
   }
   
   footer .right .all {
-    margin: 20px 20px; /* زيادة المسافات بين الأقسام */
+    margin: 20px 20px; 
   }
   
   footer .list_left {
     display: flex;
-    justify-content: center; /* محاذاة الأيقونات في الوسط */
+    justify-content: center; 
     margin: 10px 0;
   }
   
   footer .list_left img {
     height: 40px;
     width: 40px;
-    margin: 0 10px; /* إضافة مسافات جانبية للأيقونات */
+    margin: 0 10px; 
   }
   
   footer .right .all h5 {
-    font-size: 18px; /* تصغير الخط قليلاً */
+    font-size: 18px; 
     font-weight: 600;
-    margin-bottom: 10px; /* إضافة مسافة أسفل العنوان */
+    margin-bottom: 10px; 
   }
   
   footer .right .all a {
     font-size: 14px;
     font-weight: 400;
     color: #FFFFFF;
-    text-decoration: none; /* إزالة الخط السفلي للروابط */
+    text-decoration: none; 
   }
   
   @media (max-width: 500px) {
     footer {
       display: flex;
-      flex-direction: column; /* ترتيب المحتوى عموديًا */
+      flex-direction: column; 
       align-items: center;
       justify-content: center;
       padding: 20px; 
@@ -86,17 +86,17 @@ footer {
     }
   
     footer .right .all {
-      margin: 5px; /* تقليل الفجوات بين الأقسام */
-      text-align: center; /* محاذاة النصوص في الوسط */
-      width: auto; /* ضمان عدم كسر العرض */
+      margin: 5px; 
+      text-align: center; 
+      width: auto;
     }
   
     footer .right .all h5 {
-      font-size: 15px; /* تصغير الخط */
+      font-size: 15px; 
     }
   
     footer .right .all a {
-      font-size: 12px; /* تصغير حجم الخط للروابط */
+      font-size: 12px; 
     }
   }
   

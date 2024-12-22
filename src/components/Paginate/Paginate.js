@@ -1,33 +1,31 @@
-// Paginate.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slide from "../Slide/Slide";
 import { Pagination } from "antd";
 import "./Paginate.css";
+import { useParams } from "react-router-dom";
 
-export default function Paginate() {
-    // بيانات مثال يمكن تمريرها لـ Slide
-    const slidesData = [
-        { id: 1, title: "Product 1" },
-        { id: 2, title: "Product 2" },
-        { id: 3, title: "Product 3" },
-        { id: 4, title: "Product 4" },
-        { id: 5, title: "Product 5" },
-        { id: 6, title: "Product 6" },
-        { id: 7, title: "Product 7" },
-        { id: 8, title: "Product 8" },
-        { id: 9, title: "Product 9" },
-        { id: 10, title: "Product 10" },
-    ];
+export default function Paginate({imageslide}) {
+    const [slides, setSlides] = useState([]); 
+    const { id } = useParams(); // Get the category ID from the URL
+
+    useEffect(() => {
+        fetch(`http://localhost:8000/api/categories/${id}/subcategories`)  // استخدم backticks هنا
+            .then(response => response.json())
+            .then(data => {
+                setSlides(data);  // تخزين البيانات المسترجعة في حالة slides
+            })
+            .catch(error => console.error('Error fetching products:', error));
+    }, [id]);  // أضف id كـ dependency للتأكد من إعادة تشغيل useEffect عند تغيير الفئة
+    console.log(slides);
 
     const [currentPage, setCurrentPage] = useState(1);
     const pageSize = 3;
 
-    // التعامل مع تغيير الصفحة
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
 
-    const currentSlides = slidesData.slice(
+    const currentSlides = slides.slice(
         (currentPage - 1) * pageSize,
         currentPage * pageSize
     );
@@ -41,8 +39,7 @@ export default function Paginate() {
                 <div className="slide-container">
                     {currentSlides.map((slide) => (
                         <div key={slide.id}>
-                            <Slide slide={slide} />
-                            {/* إضافة الأزرار أسفل كل Slide */}
+                            <Slide slide={slide} marginLeftLaptop="50px" marginLeftMobile="42px"  imageslide={slide.image_path ? `http://localhost:8000/storage/${slide.image_path}` : imageslide}    />
                             <div className="button-container">
                                 <button className="add">Add to cart</button>
                                 <button className="remove">Remove from Wishlist</button>
@@ -55,7 +52,7 @@ export default function Paginate() {
                     <Pagination
                         current={currentPage}
                         pageSize={pageSize}
-                        total={slidesData.length}
+                        total={slides.length}  // استخدم slides.length
                         onChange={handlePageChange}
                         itemRender={(current, type, originalElement) => {
                             if (type === "prev") {

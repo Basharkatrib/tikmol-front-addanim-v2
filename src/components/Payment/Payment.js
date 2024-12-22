@@ -6,6 +6,7 @@ import visa from "../../assets/images/visa.png";
 import master from "../../assets/images/master.png";
 import phone from "../../assets/images/phone.png";
 import buds from "../../assets/images/buds.png";
+import { Link } from "react-router-dom";
 
 
 export default function Payment() {
@@ -109,10 +110,8 @@ export default function Payment() {
                                 </div>
                             </div>
                             <p className="end"><img src={payment} /> Add a new credit or a debit card +</p>
-
                         </div>
                     </div>
-
                 </div>
                 <div className="right">
                     <div className="top">
@@ -135,10 +134,9 @@ export default function Payment() {
                             <h3>Total</h3>
                             <h3>  SAR 4500</h3>
                         </div>
-                        <button type="submit">Confirm Payment</button>
-
-
-
+                        <Link to="/order" >
+                            <button type="submit">Confirm Payment</button>
+                        </Link>
                     </div>
                     <div className="under2">
                         <h3>Items</h3>
@@ -152,11 +150,8 @@ export default function Payment() {
                             <p>Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/Noise Cancelling, Hi-Fi Sound, 360 So...<span>Quantity: 1</span></p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     );
 }

@@ -48,15 +48,17 @@
 }
 
 .search-wrapper .input_sel select {
-    width: 35px;
+    width: 80px;
     font-size: 12px;
     background-color: #F0F0F0;
+    outline: none;
 }
 
 .search-wrapper input {
     background-color: #F0F0F0;
     width: 330px;
     outline: none;
+    padding: 0px 10px;
 }
 
 .sign {
@@ -87,6 +89,7 @@
     border-radius: 4px;
     margin-left: 10px;
     justify-content: center;
+    gap: 10px;
 }
 
 .rin {
@@ -126,6 +129,9 @@
 .lang {
     margin-left: 20px;
 }
+.lang select{
+    outline: none;
+}
 
 .cart-header {
     display: flex;
@@ -135,13 +141,11 @@
     height: 40px;
     width: 88px;
     border: 1px solid transparent;
-    /* Set a solid border with transparent color */
     border-image-source: linear-gradient(193.52deg, #FF31FA -16.43%, #8733FF 61.49%, #5827BA 90.2%, #361E88 114.81%, #211969 135.31%, #1A175E 145.56%);
     border-image-slice: 1;
-    /* This is important to display the gradient properly */
     border-radius: 10px;
-    /* Optional: to give it rounded corners */
     margin-left: 20px;
+    gap: 5px;
 
 }
 
@@ -161,11 +165,11 @@
 }
 
 .all .second {
-    height: 32px; /* زيادة الارتفاع قليلاً لمظهر أفضل */
+    height: 32px; 
     background-color: #f5f5f5;
     display: flex;
     align-items: center;
-    padding: 0 2px; /* بعض الحشو للحصول على مظهر أفضل */
+    padding: 0 2px; 
     justify-content: space-between;
     position: relative;
 }
@@ -175,7 +179,7 @@
     width: 95%;
     display: flex;
     flex-wrap: nowrap;
-    scroll-behavior: smooth; /* التمرير السلس */
+    scroll-behavior: smooth; 
 }
   
 .categories {
@@ -188,39 +192,39 @@
 }
   
 .categories li {
-    font-size: 14px; /* حجم خط أكبر قليلاً */
+    font-size: 14px; 
     font-weight: 500;
     margin-right: 20px;
     color: #414447;
-    white-space: nowrap; /* منع الانكسار */
+    white-space: nowrap; 
 }
   
 .arrowleft {
     background: #ececed;
-    width: 22px; /* زيادة العرض لمظهر أفضل */
+    width: 22px; 
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 0 2px; /* المسافة بين السهم والقائمة */
-    transition: background-color 0.3s ease; /* تأثير عندما يتغير لون الخلفية */
+    margin: 0 2px; 
+    transition: background-color 0.3s ease; 
     rotate: 180deg;
 }
 .arrowright {
     background: #ececed;
-    width: 22px; /* زيادة العرض لمظهر أفضل */
+    width: 22px; 
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 0 2px; /* المسافة بين السهم والقائمة */
-    transition: background-color 0.3s ease; /* تأثير عندما يتغير لون الخلفية */
+    margin: 0 2px; 
+    transition: background-color 0.3s ease; 
 }
   
 .arrowright:hover {
-    background-color: #d1d1d1; /* تغيير اللون عند التحويم لمظهر تفاعلي */
+    background-color: #d1d1d1; 
 }
 .arrowleft:hover {
     background-color: #d1d1d1; 
@@ -381,6 +385,7 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    margin-bottom: 40px;
     
 
 
@@ -521,11 +526,14 @@
 
 
 
+.justify{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .all .nav-desk{
         display: none;
     }
@@ -544,7 +552,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    .all .nav-mob .contain .right{
+    .all .nav-mob .contain > .right{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -597,6 +605,32 @@
     .all .nav-mob .locate p .para-locate{
         color: Purple;
     }
+    .signin-modal .right{
+        display: none;
+       
+    }
+    .signin-modal .left{
+        flex-basis: 100%;
+        background-color: white;
+    } 
+    .signin-modal2 .right{
+        display: none;
+       
+    }
+    .signin-modal2 .left{
+        flex-basis: 100%;
+        background-color: white;
+    }
+    .signin-modal{
+        display: flex;
+        width: 100%;
+        height: 540px;
+        position: relative;
+        overflow: hidden;
+        
+    
+    
+    } 
     
 
    
