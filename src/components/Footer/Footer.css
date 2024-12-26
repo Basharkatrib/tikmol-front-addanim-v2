@@ -100,3 +100,21 @@ footer {
     }
   }
   
+
+
+
+  .list_left li img:hover{
+    animation: rotate 1.5s ease forwards; /* تطبيق الحركة */
+
+  }
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

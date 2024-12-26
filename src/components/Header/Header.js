@@ -35,6 +35,15 @@ const Header = () => {
     const [error2, setError2] = useState('');
     const [success2, setSuccess2] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [navWidth, setNavWidth] = useState('0%'); // الحالة الافتراضية
+
+    const openNav = () => {
+        setNavWidth('100%'); // فتح القائمة
+    };
+
+    const closeNav = () => {
+        setNavWidth('0%'); // إغلاق القائمة
+    };
 
     const navigate = useNavigate();
 
@@ -497,6 +506,27 @@ const Header = () => {
                     </div>
                 </div>
             </nav >
+            <div className="nav-middle">
+                <div id="myNav" className="overlay" style={{ width: navWidth }}>
+                    <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+                    <div className="overlay-content">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div className="icon-middle">
+                <span style={{ fontSize: '30px', cursor: 'pointer' }} onClick={openNav}>&#9776;</span>
+                <div className="ms-2">
+                        <Link to="/">
+                            <img src={logo} alt="Logo" />
+
+                        </Link>
+                    </div>
+                </div>
+                
+            </div>
             <div className="nav-mob">
                 <div className="contain">
                     <div className="ms-2">
@@ -803,8 +833,8 @@ const Header = () => {
                 <div className="categories-wrapper" ref={categoriesRef}>
                     <ul className="categories">
                         {categories.map((category) => (
-                             <Link to={`/paginate/${category.id}`}>
-                                <li key={category.id}>{category.name}</li> 
+                            <Link to={`/paginate/${category.id}`}>
+                                <li key={category.id}>{category.name}</li>
                             </Link>
                         ))}
                     </ul>

@@ -14,14 +14,16 @@ import Order_pa from './Pages/Order-pa/Order-pa';
 import Checkout_pa from './Pages/Checkout-pa/Checkout-pa';
 import Refunds_pa from './Pages/Refunds-pa/Refunds-pa';
 import Product_pa from './Pages/Product-pa/Product-pa';
+import Spinner from './Pages/Spinner/Spinner';
+
 
 
 
 function App() {
   return (
      <>
-      <Header />
-      <Offer />
+      {/* <Header />
+      <Offer /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/adress" element={<Adress_pa />} />
@@ -33,7 +35,9 @@ function App() {
         <Route path="/refund" element={<Refunds_pa />} />
         <Route path="/product/:id" element={<Product_pa />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
+
+
      
       
     </>

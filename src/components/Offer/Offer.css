@@ -49,6 +49,24 @@
     margin-top: 10px;
 }
 
+/* إضافة تأثير التحريك عند عرض الأحرف */
+.tikmo span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeInDown 0.5s ease forwards; /* تطبيق الحركة */
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .all_offer {
