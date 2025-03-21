@@ -4,12 +4,14 @@
   flex-direction: column;
   width: 100%;
   height: auto;
+  margin-top: 15px;
 }
 .adress-all .head{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 30px;
+  margin-bottom: 10px;
 }
 .adress-all .head img{
   width: 261px;

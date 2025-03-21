@@ -63,10 +63,9 @@ export default function Slide({ slide, imageslide, marginLeftLaptop, marginLeftM
                     )}
                 </p>
 
-                {/* عرض زر التسليم السريع */}
                 <div className="end-cart">
                     <p>Express</p>
-                    <Link to="/address">
+                    <Link to="/adress">
                         <button>
                             <FaShippingFast className="icon" /> Fast Delivery
                         </button>
